@@ -22,4 +22,5 @@
 | /szmelc      | https://szmelc.com/     |
 | /debug      | https://szmelc.com/debug/     |
 | /android      | https://szmelc.com/android/     |
+| /help | https://github.com/serainox420/Discord-Dotfiles/blob/personal/aliases.md |
 
