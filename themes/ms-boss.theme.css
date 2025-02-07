@@ -1,0 +1,117 @@
+/**
+* @name M$-BOSS 
+* @version 1.0
+* @author SilverX [$x66]
+* @description A fusion of Nocturnal's deep darkness and Vibrant Glass's stylish transparency, now with a blurred background layer.
+* @source https://github.com/xcruxiex/themes | https://github.com/Kayno0o/vibrant-glass-theme
+* @website https://szmelc.com/
+*/
+
+/**
+                                                                    
+            █     █   ██            ████      ██      ██      ██    
+            ██   ██  █  █           █   █    █  █    █  █    █  █   
+            ██   ██ █    █          █    █  █    █  █    █  █    █  
+            █ █ █ █ █               █    █  █    █  █       █       
+            █ █ █ █ █               █    █  █    █  █       █       
+            █  █  █  █              █   █   █    █   █       █      
+            █  █  █   ██    ██████  ████    █    █    ██      ██    
+            █     █     █           █   █   █    █      █       █   
+            █     █      █          █    █  █    █       █       █  
+            █     █ █    █          █    █  █    █  █    █  █    █  
+            █     █ █    █          █    █  █    █  █    █  █    █  
+            █     █  █  █           █   █    █  █    █  █    █  █   
+            █     █   ██            ████      ██      ██      ██        
+                                                                                                                                                
+*/
+
+
+@import url("https://raw.githubusercontent.com/serainox420/Discord-Dotfiles/refs/heads/personal/themes/msboss.css");
+@import url("https://xcruxiex.github.io/themes/core/badges.css");
+@import url("https://xcruxiex.github.io/themes/core/custom-font.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css"); /* Radial Status */
+@import url("https://raw.githack.com/Kayno0o/vibrant-glass-theme/main/glass_remote.theme.css");
+
+:root {
+  --backgroundColor01: #03161e;
+  --backgroundColor02: #021019;
+  --mainColor: #06302b;
+  --gradientColor01: #00F260;
+  --gradientColor02: #0575E6;
+  
+  /* Better Hljs */
+  --backgroundCode: #030f1d;
+  --backgroundName: rgba(0, 0, 0, .2);
+
+  /* Radial Status */
+  --rs-small-spacing: 3px;
+  --rs-large-spacing: 3px;
+  --rs-width: 2px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #00ff8c;
+  --rs-idle-color: #ffa200;
+  --rs-dnd-color: #ff0000;
+  --rs-offline-color: #232323;
+  --rs-streaming-color: #8800ffeb;
+  --rs-invisible-color: #747f8d;
+  --rs-phone-visible: block;
+  --rs-phone-color: var(--rs-online-color);
+  --customFont: 'gg sans', sans-serif;
+}
+
+/* Vibrant Glass Customization */
+.theme-dark {
+    --window-name: "Glass";
+    --window-name-color: rgb(209, 255, 255);
+    --light-opacity: 0.94;
+    --opacity: 0.69;
+    --home-icon: url(https://i.imgur.com/sjDMqc2.png);
+    --dark-opacity: 0.75;
+    --background-url: url('https://i.imgur.com/Ltw31PM.png');
+    --background-color: 1.3, 1.5, 2.5;
+}
+
+/* Apply background */
+.bg__7adbf {
+    background: var(--background-url) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* Create a blurred semi-transparent overlay */
+.bg__7adbf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 17, 20, 0.8); /* Slight dark overlay for better readability */
+    backdrop-filter: blur(69px); /* Soft blur effect */
+    z-index: -1; /* Keeps it behind all elements */
+}
+
+/* Ensure elements allow background visibility */
+.theme-dark .container__626e1,
+.theme-dark .chat__52833,
+.theme-dark .membersWrap__31f3b,
+.theme-dark .channel__0aef5,
+.theme-dark .content__2a4c3 {
+    background: rgba(4, 95, 117, 0.589) !important; /* Semi-transparent dark overlay */
+    backdrop-filter: blur(25px); /* Keeps blur effect applied */
+}
+
+:root {
+    --mainColor: #0a6967;
+    --gradientColor01: #00f260;
+    --gradientColor02: #047c42;
+    --rs-small-spacing: 2px;
+    --rs-medium-spacing: 3px;
+    --rs-large-spacing: 4px;
+    --rs-small-width: 2px;
+    --rs-medium-width: 3px;
+    --rs-large-width: 4px;
+    --rs-width: 2px;
+    --rs-phone-visible: block;
+    --rs-phone-color: var(--rs-online-color);
+}
